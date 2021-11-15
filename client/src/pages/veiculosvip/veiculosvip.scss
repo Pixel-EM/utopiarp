@@ -1,0 +1,184 @@
+.cvipWrapper{
+    display: flex;
+
+    position: relative;
+
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-height: 500px;
+
+    background-color: white;
+}
+.cvipFiltrosWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80%;
+}
+.cvipContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+.contentTitle{
+    width: 100%;
+    margin: 30px 0px;
+    h1{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+    border-bottom: 1px solid #bebebe;
+}
+.cardCarro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+
+    width: 400px;
+    height: 300px;
+
+    box-shadow: 0px 1px 3px rgb(128, 128, 128);
+    border-radius: 10px;
+    margin: 2rem;
+
+    cursor: pointer;
+
+}
+.cardImagem{
+    display: flex;
+    
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+.imgCar{
+    object-fit: fill;
+    width: 500px;
+    height: 300px;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -400px;
+
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+
+    transition: .5s ease;
+}
+
+.cardImagem:hover ~ .cardInfo{
+    top: 0px;
+}
+.cardInfo:hover{
+    top: 0px;   
+}
+.cardImagem:hover ~ .imgCar{
+    filter: brightness(250%);
+}
+
+.cardProps{
+    display: flex;
+    flex-direction: column;
+    
+
+    height: 100%;
+    padding: 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: white;    
+}
+.nome{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.tipo{
+    margin: 2px 0px;
+}
+.valor{
+    margin: 2px 0px;
+}
+
+.cardButton{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.cardButtonUnit{
+    outline: none;
+    width: 200px;
+    height: 50px;
+
+    font-family: "Zen Kurenaido", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+
+    cursor: pointer;
+    border: none;
+
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    // border-top: 1px solid rgb(158, 158, 158);
+
+    transition: .5s ease;
+}
+.vis{
+    color: white;
+}
+.vis:hover{
+    background-color: rgba($color: #4859eb, $alpha: 0.8);
+}
+.add{
+    color: white;
+}
+.add:hover{
+    background-color: rgba($color: #48eb91, $alpha: 0.8);
+}
+.maisCarros{
+    display: flex;
+    justify-content: center;
+
+    width: 80%;
+
+    margin: 2rem 0px;
+    padding: 20px;
+}
+.buttonMaisCarros{
+    width: 250px;
+    height: 60px;
+
+    outline: none;
+    border: none;
+    border-radius: 50px;
+
+    background-color: #4859eb;
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: .5s ease;
+}
+
+.buttonMaisCarros:hover{
+    background-color: #2f41e9;
+}

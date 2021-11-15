@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600&family=Roboto:wght@100;300;400;900&family=Zen+Kurenaido&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html{
+    z-index: 0;
+    background-color: #03030c;
+}
+
+.topContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 100%;
+
+    margin: auto;
+    padding: 0;
+
+    box-shadow: 0px 0px 0px 1px rgb(5, 5, 26);
+
+    background-image: url('../../assets/topbanner.png');
+
+}
+.topbarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+
+    margin: 0;
+    padding: 0;
+}
+.logoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    height: 100%;
+    width: 350px;
+
+    padding-left: 10px;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+#logoUtopia{
+    margin-left: -500px;
+    filter: opacity(0%);
+    transition: .3s margin-left ease, 2s filter;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+
+    border: none;
+
+    z-index: 3;
+
+    background: rgb(164,249,255);
+    background: linear-gradient(90deg, rgba(164,249,255,1) 0%, rgba(64,221,233,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logoImage{
+    transition: 1s ease;
+    height: 45px;
+
+    z-index: 4;
+}
+.logoImage:hover{ 
+    transform: rotate(-360deg); 
+}
+.logoImage:hover ~ #logoUtopia{
+    filter: opacity(100%);
+    margin-left: 15px;
+    text-decoration: none !important;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+.menuHamburguer{
+    display: none;
+    color: white;
+    font-size: 2rem;
+}
+.menuList{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 500px;
+    margin-left: auto;
+    list-style-type: none;
+}
+.menuListItem{
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    transition: .5s ease;
+
+    text-decoration: none;
+}
+.menuSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    height: 30px;
+    width: auto;
+
+    padding: 0 10px;
+    margin-left: 10px;
+    cursor: pointer; 
+
+    border-left: 1px solid rgba($color: white, $alpha: 0.3);
+}
+.socialIcon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.discord, .instagram{
+    height: 30px;
+    width: 30px;
+    
+    border-radius: 5px;
+    transition: .3s ease;
+    padding: 5px;
+}
+
+.discord:hover{
+    background-color: #404EED;
+}
+.instagram:hover{
+    background-color: rgb(192, 65, 165);
+}
+
+.menuListItem:hover{
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 0px 1px 8px white;
+
+    cursor: pointer;
+}
+.wrapperHam{
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+}
+.menuHamburguer{
+    position: absolute;
+    right: 12%;
+    margin: 25px 0 0 auto;
+    z-index: 102;
+    
+}
+.menuH{
+    display: flex;
+    position: absolute;
+    top: -500px;
+    justify-content: center;
+
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 101;
+
+    transition: 1s ease;
+}
+.menuListHam{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    transition: .5s ease;
+}
+.menuListItemHam{
+    margin: 5px 0;
+}
+.banner{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 340px;
+
+    margin: auto;
+    padding: 0;
+
+
+}
+
+.bannerEfeito{
+    position: absolute;
+    top: 80;
+    left: 0;
+
+    background-image: url('../../assets/banner.png');
+    background-position: center center;
+    background-size: cover;
+    
+    z-index: 0;
+    width: 100%;
+    height: 340px;
+    transition: .5s ease;    
+}
+.bannerEfeito:hover{
+    filter: brightness(120%);
+}
+
+
+.bannerFrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .menu{
+        width: 150px ;
+    }
+    .menuList{
+        display: none ;
+        z-index: 5 ;
+    }
+    .menuHamburguer{
+        display: flex ;
+        cursor: pointer;
+
+        transition: .5s ease;
+    }
+    .wrapperHam{
+        display: block;
+        z-index: 102;
+    }
+}

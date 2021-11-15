@@ -1,0 +1,278 @@
+.homeWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+
+    color: white;
+    background-color: #E8EEF2;
+
+    border-top: 3px solid #0091F7;
+}
+.contentWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    flex-wrap: wrap;
+
+    width: 80%;
+    padding: 50px 0;
+
+    color: black;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+
+
+    border-radius: 10px 10px 0 0;
+
+    position: relative;
+    overflow: hidden;
+
+    width: 450px;
+    height: 350px;
+}
+.cardImg{
+    margin-bottom: auto;
+    width: 450px;
+    height: 250px;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    transition: .3s ease;
+    
+    img{
+        border-radius: 10px;
+        width: 450px;
+        height: 250px;
+    }
+}
+.cardImgText{
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    
+    position: absolute;
+
+    width: 450px;
+    height: 250px;
+    top: -220px;
+
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: white;
+    
+    border-radius: 10px;
+    
+    transition: .3s ease;
+    
+    z-index: 101;
+}
+.cardImg:hover ~ .cardImgText{
+    visibility: visible;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    font-size: 2.5rem;
+    z-index: 102;
+    top: 0px;
+
+    cursor: pointer;
+}
+.cardImgText:hover {
+    visibility: visible;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    font-size: 2.5rem;
+    z-index: 102;
+    top: 0px;
+    cursor: pointer;
+}
+
+.cardText{
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+
+    padding: 10px 5px;
+}
+.cardText p{
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+
+    text-align: justify;
+}
+
+
+.contentTitle{
+    width: 100%;
+    margin: 0px 0px 80px 0;
+    h1{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+    border-bottom: 1px solid #bebebe;
+}
+
+.vipContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+}
+
+.vipBannerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    border-top: 1px solid #bebebe;
+
+    padding: 50px;
+}
+
+.vipBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
+    width: 450px;
+    min-width: 350px;
+    height: 300px;
+    text-align: center;
+
+    padding: 35px;
+
+    background-color: white;
+    background-image: url('../../assets/bush.png');
+    border-radius: 10px;
+
+    box-shadow: 0px 1px 10px rgb(204, 204, 204);
+    h1{
+        margin-top: 20px;
+        font-weight: 600;
+        color: #161616;
+    }
+}
+.buttonVip{
+    padding: 20px;
+    
+    margin: auto;
+
+    color: white;
+    font-size: 1rem;
+
+    border-radius: 30px;
+    background-color: #0091F7;
+    border: none;
+
+    cursor: pointer;
+    transition: 1s ease;
+}
+.buttonVip:hover{
+    background-color: #0067b1;
+}
+
+.anuncioBanner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    text-align: center;
+
+    padding: 15px;
+    margin: 0px 10px;
+
+    background-color: white;
+    background-image: url('../../assets/bush.png');
+    border-radius: 10px;
+
+    box-shadow: 0px 1px 10px rgb(204, 204, 204);
+}
+.anuncioBanner img{
+    width: 100px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .contentWrapper{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+
+        margin: 0px 10px 50px 10px;
+        width: 350px;
+    }
+    .cardImg{
+        width: 300px;
+    }
+    .cardImg img, .cardImgText{
+        width: 350px;
+        height: 200px;
+    }
+    .cardImg:hover ~ .cardImgText{
+        visibility: visible;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        font-size: 2rem;
+        z-index: 102;
+        top: 0px;
+    
+        cursor: pointer;
+    }
+    .cardImgText:hover {
+        visibility: visible;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        font-size: 2rem;
+        z-index: 102;
+        top: 0px;
+        cursor: pointer;
+    }
+    .cardText{
+     width: 300px;
+     padding: 5px 0 0 0;
+    }
+    .cardText p{
+        font-size: 1.1rem;
+    }
+
+    .anuncioBanner{
+        display: none;
+    }
+
+  }

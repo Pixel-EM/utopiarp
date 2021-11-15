@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600&family=Roboto:wght@100;300;400;900&family=Zen+Kurenaido&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  z-index: 0;
+  background-color: #03030c;
+}
+
+.topContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 0px 1px #05051a;
+          box-shadow: 0px 0px 0px 1px #05051a;
+  background-image: url("../../assets/topbanner.png");
+}
+
+.topbarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 350px;
+  padding-left: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#logoUtopia {
+  margin-left: -500px;
+  -webkit-filter: opacity(0%);
+          filter: opacity(0%);
+  -webkit-transition: .3s margin-left ease, 2s -webkit-filter;
+  transition: .3s margin-left ease, 2s -webkit-filter;
+  transition: .3s margin-left ease, 2s filter;
+  transition: .3s margin-left ease, 2s filter, 2s -webkit-filter;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  border: none;
+  z-index: 3;
+  background: #a4f9ff;
+  background: -webkit-gradient(linear, left top, right top, from(#a4f9ff), to(#40dde9));
+  background: linear-gradient(90deg, #a4f9ff 0%, #40dde9 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoImage {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  height: 45px;
+  z-index: 4;
+}
+
+.logoImage:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.logoImage:hover ~ #logoUtopia {
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+  margin-left: 15px;
+  text-decoration: none !important;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menuHamburguer {
+  display: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 500px;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.menuListItem {
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  text-decoration: none;
+}
+
+.menuSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 30px;
+  width: auto;
+  padding: 0 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.socialIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.discord, .instagram {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  padding: 5px;
+}
+
+.discord:hover {
+  background-color: #404EED;
+}
+
+.instagram:hover {
+  background-color: #c041a5;
+}
+
+.menuListItem:hover {
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 0px 1px 8px white;
+  cursor: pointer;
+}
+
+.wrapperHam {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+}
+
+.menuHamburguer {
+  position: absolute;
+  right: 12%;
+  margin: 25px 0 0 auto;
+  z-index: 102;
+}
+
+.menuH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 101;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.menuListHam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.menuListItemHam {
+  margin: 5px 0;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 340px;
+  margin: auto;
+  padding: 0;
+}
+
+.bannerEfeito {
+  position: absolute;
+  top: 80;
+  left: 0;
+  background-image: url("../../assets/banner.png");
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+  width: 100%;
+  height: 340px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.bannerEfeito:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.bannerFrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    width: 150px;
+  }
+  .menuList {
+    display: none;
+    z-index: 5;
+  }
+  .menuHamburguer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .wrapperHam {
+    display: block;
+    z-index: 102;
+  }
+}
+/*# sourceMappingURL=topbar.css.map */

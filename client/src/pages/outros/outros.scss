@@ -1,0 +1,86 @@
+.outrosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    background-color: white;
+}
+
+.outrosCard{
+    display: flex;
+    flex-direction: column;
+
+    width: 450px;
+    height: auto;
+
+    margin: 20px 0px;
+
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgb(214, 214, 214);
+
+    cursor: pointer;
+}
+
+.imagemOutros{
+    display: flex;
+    justify-content: center;
+    max-height: 261px;
+    
+    border-radius: 10px 10px 0px 0px;
+    background-size: 450px 262px;
+
+}
+
+.cardImgOutros{
+    width: 450px;
+    height: 261px;
+
+    border-radius: 10px 10px 0px 0px;
+    transition: .3s ease;
+}
+
+.infoOutros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Roboto Slab', serif;
+}
+
+.propsName{
+    height: 35px;
+    width: 225px;
+
+    padding: 0px 0px 0px 20px;
+    transition: .1s ease;
+}
+
+table{
+    margin-top: 10px;
+}
+.propsValue{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 35px;
+    width: 225px;
+    padding: 0px 20px 0px 0px;
+    transition: .1s ease;
+}
+
+.propsName:hover,.propsValue:hover{
+    background-color: rgb(118, 170, 108);
+    color: white;
+}
+.buttonVipContainer{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1rem;
+    width: 100%;
+}

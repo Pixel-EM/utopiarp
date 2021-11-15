@@ -1,0 +1,71 @@
+.carrinho {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  height: 35px;
+  width: 170px;
+  margin: 0px 0px -65px 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 200;
+  cursor: pointer;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.carrinhoStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.carrinhoStatus i > .items {
+  padding-left: 10px;
+}
+
+.carrinho:hover {
+  color: white;
+  background-color: black;
+}
+
+.carrinho:hover .carrinhoText {
+  border-left: 1px solid white;
+}
+
+.carrinhoText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 35px;
+  margin-left: 10px;
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid black;
+}
+/*# sourceMappingURL=carrinho.css.map */

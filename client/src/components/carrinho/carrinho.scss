@@ -1,0 +1,63 @@
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+
+    position: sticky;
+
+    top: 10px;
+
+    height: 35px;
+    width: 170px;
+    margin: 0px 0px -65px 10px;
+
+    color: black;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+
+
+    z-index: 200;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.carrinhoStatus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0px 10px;
+
+    i > .items{
+        padding-left: 10px;
+    }
+}
+
+.carrinho:hover{
+    color: white;
+    background-color: black;
+    .carrinhoText{
+        border-left: 1px solid white;
+    }
+}
+
+
+.carrinhoText{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 35px;
+
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+
+    border-left: 1px solid black;
+}

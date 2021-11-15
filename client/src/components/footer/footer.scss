@@ -1,0 +1,46 @@
+.footerContainer{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 80px;
+    background-image: url('../../assets/footer.png');    
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    
+    width: 80%;
+    min-height: 100%;
+    color: white;
+}
+.footer h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.footer h4{
+    font-family: 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+.footer h4 > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#mern{
+    color: greenyellow;
+    font-weight: 100;
+}
+#pixel{
+    color: white;
+    font-weight: 100;
+}
